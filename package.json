@@ -1,0 +1,27 @@
+{
+  "name": "thoxos-yolo-benchmark",
+  "description": "ThoxOS Web — YOLO ONNX Model Benchmark. In-browser YOLO inference benchmarking powered by ONNX Runtime Web with WebGPU and WASM backends, styled with the ThoxOS design system.",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0",
+    "onnxruntime-web": "^1.23.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "tailwindcss": "^4.3.0",
+    "vite": "^6.3.5"
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"name": "ThoxOS Web Edition",
+	"short_name": "ThoxOS Web",
+	"description": "Chat with THOX.ai models on Hugging Face — a ThoxOS Mini interface.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#000000",
+	"theme_color": "#000000",
+	"icons": [
+		{ "src": "/thoxos/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+		{ "src": "/thoxos/icon-512x512.png", "sizes": "512x512", "type": "image/png" },
+		{ "src": "/thoxos/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+	]
+}

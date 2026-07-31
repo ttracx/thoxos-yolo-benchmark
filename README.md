@@ -13,6 +13,37 @@ In-browser YOLO ONNX model benchmarking powered by ONNX Runtime Web with WebGPU 
 
 Built by leveraging [nomi30701/yolo-onnx-benchmark-web](https://github.com/nomi30701/yolo-onnx-benchmark-web) and matching the UI/interface of [ThoxOS Web Edition](https://github.com/ttracx/thoxos-webby-edition) and [ThoxOS Mini](https://github.com/ttracx/thoxos-mini).
 
+## Ecosystem role and canonical status
+
+**Canonical for:** in-browser YOLO/ONNX benchmarking. It is a **benchmarking and
+demo tool**, not device software and not part of any shipping ThoxOS surface.
+
+**This is the only PUBLIC repository in the ThoxOS family** — every sibling below
+is private. Treat anything added here as published.
+
+| Repo | Relationship |
+|---|---|
+| [`thoxos-web-edition`](https://github.com/ttracx/thoxos-web-edition) | Browser-native **WebGPU LLM** inference (Transformers.js). The closest technical sibling — same in-browser-inference idea, different runtime and models. |
+| [`thoxos-webby-edition`](https://github.com/ttracx/thoxos-webby-edition) | Server-backed chat UI; the design-token source this repo's styling matches. |
+| [`thoxos-mini`](https://github.com/ttracx/thoxos-mini) | ThoxOS Mini documentation stub. |
+| [`thoxos-emulator`](https://github.com/ttracx/thoxos-emulator) | Desktop device simulator. |
+
+**Not a MeshStack repo.** No Supabase, no cloud account, no device registry, no
+backend. Everything runs in the browser.
+
+### ⚠️ Licence composition — read before adding models or reusing code
+
+- **This repository's code is MIT.**
+- **The bundled YOLO weights in `public/models/` are AGPL-3.0 (Ultralytics)** —
+  nine `.onnx` files, committed and served. See `public/models/LICENSE.txt`.
+- The two are different licences travelling in one public repository. THOX
+  elsewhere treats AGPL-3.0 as disqualifying for products it needs to keep
+  private or commercial, so **do not lift this bundling pattern into a product
+  repo**, and do not add further AGPL artifacts here without a deliberate
+  decision.
+
+See [`AGENTS.md`](AGENTS.md) for the coding-agent handoff.
+
 ## Features
 
 - **WebGPU + WASM backends** — benchmark on GPU or CPU, entirely in-browser

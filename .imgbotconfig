@@ -1,5 +1,6 @@
 {
-  "exclusions": [
-    "public/**"
+  "ignoredFiles": [
+    "public/**",
+    "**/public/**"
   ]
 }
